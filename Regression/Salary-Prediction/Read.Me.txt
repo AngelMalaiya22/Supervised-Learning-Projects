@@ -1,0 +1,167 @@
+# Salary Prediction using Machine Learning
+
+## Overview
+
+This project focuses on predicting employee salaries using Machine Learning regression algorithms. The dataset contains information such as age, education level, job title, years of experience, and salary.
+
+The main objective of this project is to:
+
+* Perform data preprocessing
+* Handle categorical data
+* Train multiple regression models
+* Compare model performances
+* Visualize important patterns in the dataset
+
+---
+
+# Dataset Information
+
+The dataset contains the following features:
+
+| Feature             | Description                     |
+| ------------------- | ------------------------------- |
+| Age                 | Age of the employee             |
+| Education Level     | Highest education qualification |
+| Job Title           | Employee job role               |
+| Years of Experience | Total years of work experience  |
+| Salary              | Target variable to predict      |
+
+The `Gender` column was removed during preprocessing because it was not important for prediction.
+
+---
+
+# Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+---
+
+# Machine Learning Algorithms Used
+
+The following regression algorithms were implemented and compared:
+
+1. Linear Regression
+2. Decision Tree Regressor
+3. Random Forest Regressor
+
+---
+
+# Data Preprocessing
+
+The following preprocessing steps were performed:
+
+* Removed unnecessary columns
+* Handled missing values using `dropna()`
+* Converted categorical features into numerical form using One-Hot Encoding
+* Split dataset into training and testing sets
+* Applied feature scaling where required
+
+---
+
+# Model Evaluation Metrics
+
+The following evaluation metrics were used:
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* R2 Score
+
+---
+
+# Model Performance
+
+## Linear Regression
+
+| Metric              | Value                  |
+| ------------------- | ---------------------- |
+| Mean Absolute Error | 2.7275814517309727e+18 |
+| Mean Squared Error  | 4.010825075912848e+37  |
+| R2 Score            | -1.823050746201907e+28 |
+
+### Observation
+
+Linear Regression performed very poorly because the dataset contains complex and non-linear relationships.
+
+---
+
+## Decision Tree Regressor
+
+| Metric              | Value       |
+| ------------------- | ----------- |
+| Mean Absolute Error | 9266.67     |
+| Mean Squared Error  | 251000000.0 |
+| R2 Score            | 0.8859      |
+
+### Observation
+
+Decision Tree Regressor performed significantly better and captured the non-linear salary patterns effectively.
+
+---
+
+## Random Forest Regressor
+
+| Metric              | Value       |
+| ------------------- | ----------- |
+| Mean Absolute Error | 9733.33     |
+| Mean Squared Error  | 254000000.0 |
+| R2 Score            | 0.8845      |
+
+### Observation
+
+Random Forest also performed very well and produced stable predictions.
+
+---
+
+# Data Visualizations
+
+The following visualizations were created:
+
+## 1. Salary vs Years of Experience
+
+Shows the relationship between experience and salary.
+
+## 2. Correlation Heatmap
+
+Displays correlation between numerical features.
+
+## 3. Actual vs Predicted Salary
+
+Compares actual salary values with predicted salary values.
+
+---
+
+# Conclusion
+
+This project demonstrated the importance of selecting appropriate machine learning algorithms based on dataset characteristics.
+
+Key findings:
+
+* Linear Regression was not suitable for this dataset because salary relationships were non-linear.
+* Decision Tree and Random Forest performed much better.
+* Decision Tree achieved the best overall performance with the highest R2 Score.
+* Proper preprocessing and feature encoding were essential for achieving accurate predictions.
+
+Overall, tree-based algorithms proved to be more effective for salary prediction tasks involving categorical and complex data patterns.
+
+---
+
+# Future Improvements
+
+Possible future enhancements:
+
+* Hyperparameter tuning
+* Cross-validation
+* Feature importance analysis
+* Deployment using Flask or Streamlit
+* Trying advanced boosting algorithms such as XGBoost
+
+---
+
+# Author
+
+Angel Malaiya
