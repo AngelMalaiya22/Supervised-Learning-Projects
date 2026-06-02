@@ -1,0 +1,125 @@
+# California Housing Price Prediction
+
+## Project Overview
+
+This project focuses on predicting housing prices in California using Machine Learning algorithms. The California Housing dataset contains various geographical, economic, and population-related features that help estimate median house values.
+
+The project includes data preprocessing, exploratory data analysis, model training, evaluation, and visualization of results.
+
+---
+
+# Dataset Information
+
+The dataset contains 20,640 instances with the following features:
+
+* `MedInc` – Median income in block group
+* `HouseAge` – Median house age in block group
+* `AveRooms` – Average number of rooms per household
+* `AveBedrms` – Average number of bedrooms per household
+* `Population` – Block group population
+* `AveOccup` – Average number of household members
+* `Latitude` – Block group latitude
+* `Longitude` – Block group longitude
+
+### Target Variable
+
+* `MedHouseVal` – Median house value
+
+---
+
+# Machine Learning Algorithms Used
+
+The following regression algorithms were implemented and compared:
+
+1. Linear Regression
+2. Decision Tree Regression
+3. Random Forest Regression
+
+---
+
+# Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+---
+
+# Project Workflow
+
+1. Data Loading
+2. Data Preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Feature Selection
+5. Train-Test Split
+6. Model Training
+7. Model Evaluation
+8. Data Visualization
+
+---
+
+# Evaluation Metrics
+
+The models were evaluated using:
+
+* Mean Absolute Error (MAE)
+* Mean Square Error (MSE)
+* R² Score
+
+---
+
+# Model Performance
+
+## Linear Regression
+
+* MAE: 0.5351
+* MSE: 0.5289
+* R² Score: 0.5943
+
+## Decision Tree Regression
+
+* MAE: 0.4702
+* MSE: 0.5368
+* R² Score: 0.5882
+
+## Random Forest Regression
+
+* MAE: 0.3341
+* MSE: 0.2601
+* R² Score: 0.8004
+
+---
+
+# Data Visualizations
+
+The following visualizations were created in this project:
+
+* Correlation Heatmap
+* Actual vs Predicted Prices
+* Feature Importance Graph
+* House Price Distribution
+* House Price vs Median Income
+* Residual Plot
+
+---
+
+# Conclusion
+
+Among all the models, Random Forest Regression achieved the best performance with the lowest prediction errors and highest R² Score. The model successfully captured complex and non-linear relationships within the housing dataset, making it the most accurate model for predicting California housing prices.
+
+Overall, Random Forest proved to be the most effective model for accurately predicting California housing prices.
+
+---
+
+# Future Improvements
+
+* Hyperparameter Tuning
+* Cross Validation
+* Feature Engineering
+* XGBoost Regression
+* Deployment using Flask or Streamlit
+
+---
