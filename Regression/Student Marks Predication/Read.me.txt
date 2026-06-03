@@ -1,0 +1,214 @@
+# 🎓 Student Performance Prediction using Linear Regression
+
+This project uses the **Linear Regression Algorithm** to predict student performance based on different academic and personal factors. The project is implemented using **Python**, **Pandas**, **NumPy**, **Matplotlib**, and **Scikit-learn** in a Jupyter Notebook.
+
+---
+
+## 📌 Project Overview
+
+The main objective of this project is to:
+
+* Understand how Linear Regression works
+* Perform data preprocessing and feature engineering
+* Train a machine learning model on student data
+* Predict students' final grades
+* Evaluate model performance using different metrics
+
+This project is beginner-friendly and helps in understanding the complete machine learning workflow.
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Jupyter Notebook
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+---
+
+## 📂 Dataset Information
+
+The dataset contains information related to students such as:
+
+* School
+* Study time
+* Failures
+* Family support
+* Activities
+* Internet access
+* Health
+* Absences
+* Previous grades
+* Final Grade (G3)
+
+The target variable used in this project is:
+
+```python
+G3
+```
+
+which represents the **final grade of students**.
+
+---
+
+## ⚙️ Steps Performed in the Project
+
+### 1️⃣ Importing Libraries
+
+Imported all required Python libraries for:
+
+* Data handling
+* Visualization
+* Model building
+* Evaluation
+
+---
+
+### 2️⃣ Loading Dataset
+
+The dataset is loaded using Pandas.
+
+```python
+pd.read_csv("student_data.csv")
+```
+
+---
+
+### 3️⃣ Data Preprocessing
+
+Performed:
+
+* Removing unnecessary columns
+* Handling categorical data
+* One-hot encoding using `get_dummies()`
+* Checking missing values
+
+---
+
+### 4️⃣ Feature Scaling
+
+Used `StandardScaler()` to normalize the input features.
+
+---
+
+### 5️⃣ Splitting Dataset
+
+The dataset was divided into:
+
+* Training Data
+* Testing Data
+
+using `train_test_split()`.
+
+---
+
+### 6️⃣ Model Training
+
+Trained the model using:
+
+```python
+LinearRegression()
+```
+
+---
+
+### 7️⃣ Prediction
+
+The trained model predicts student final grades based on input features.
+
+---
+
+### 8️⃣ Model Evaluation
+
+The model performance was evaluated using:
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* R² Score
+
+---
+
+## 📊 Machine Learning Workflow
+
+```text
+Dataset → Data Cleaning → Encoding → Feature Scaling → Train/Test Split → Model Training → Prediction → Evaluation
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+Student-Performance-Linear-Regression/
+│
+├── Student Performance Single Target - Linear Regression.ipynb
+├── student_data.csv
+└── README.md
+```
+
+---
+
+## 🚀 How to Run the Project
+
+1. Clone this repository
+
+```bash
+git clone <your-repository-link>
+```
+
+2. Open the project folder
+
+3. Install required libraries
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+4. Run the Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+---
+
+## 📈 Learning Outcomes
+
+Through this project, you can learn:
+
+* Basics of Machine Learning
+* Linear Regression Algorithm
+* Data preprocessing techniques
+* Feature scaling
+* Model training and testing
+* Performance evaluation
+
+---
+
+## 🌟 Future Improvements
+
+* Improve model accuracy
+* Try multiple regression models
+* Add visualization dashboards
+* Deploy the model using Flask or Streamlit
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome.
+
+If you want to improve this project:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+---
+
+
