@@ -1,0 +1,104 @@
+# Car Price Prediction using Machine Learning
+
+## Project Overview
+This project focuses on predicting the selling price of used cars using Machine Learning Regression models. The dataset contains various features related to cars such as present price, kilometers driven, fuel type, transmission type, and ownership details. The goal of this project is to build an accurate regression model that can estimate the selling price of a car based on these features.
+
+---
+
+# Dataset Information
+
+The dataset contains the following features:
+
+| Feature Name | Description |
+|---|---|
+| Car_Name | Name of the car |
+| Year | Manufacturing year of the car |
+| Selling_Price | Selling price of the car (Target Variable) |
+| Present_Price | Current ex-showroom price |
+| Kms_Driven | Total kilometers driven |
+| Fuel_Type | Type of fuel used |
+| Seller_Type | Dealer or Individual |
+| Transmission | Manual or Automatic |
+| Owner | Number of previous owners |
+
+---
+
+# Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+---
+
+# Machine Learning Models Used
+
+The following regression models were implemented:
+
+1. Linear Regression  
+2. Decision Tree Regressor  
+3. Random Forest Regressor  
+
+---
+
+# Data Preprocessing
+
+The following preprocessing steps were performed:
+
+- Handling categorical variables using encoding
+- Feature selection
+- Train-test splitting
+- Data visualization and analysis
+
+---
+
+# Data Visualizations
+
+The project includes several visualizations for better understanding of the dataset:
+
+- Correlation Heatmap
+- Present Price vs Selling Price
+- Actual vs Predicted Prices
+- Feature Importance Graph
+
+---
+
+# Model Evaluation Metrics
+
+The models were evaluated using:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
+
+### Best Model Performance
+
+The Random Forest Regressor achieved the best performance with:
+
+- R² Score: 0.96
+- Low prediction error
+- High prediction accuracy
+
+---
+
+# Conclusion
+
+The project successfully demonstrates how Machine Learning can be used for car price prediction. Among all models, the Random Forest Regressor performed the best and provided highly accurate predictions. This project also highlights the importance of data preprocessing, feature engineering, and visualization in building effective machine learning models.
+
+---
+
+# Future Improvements
+
+- Hyperparameter tuning
+- Deployment using Flask or Streamlit
+- Adding more real-world car features
+- Testing advanced boosting algorithms like XGBoost
+
+---
+
+# Author
+
+Angel Malaiya
